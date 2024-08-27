@@ -265,6 +265,10 @@ def main():
             cmake_args.append("-DWITH_LAPACK=ON")
             cmake_args.append("-DENABLE_PRECOMPILED_HEADERS=OFF")
 
+    # Custom flags
+    cmake_args.append("-DWITH_FFMPEG=OFF")
+    cmake_args.append("-DWITH_WEBP=OFF")
+
     # works via side effect
     RearrangeCMakeOutput(
         rearrange_cmake_output_data, files_outside_package_dir, package_data.keys()
@@ -541,3 +545,5 @@ class EmptyListWithLength(list):
 
 if __name__ == "__main__":
     main()
+
+# vi: tabstop=4 shiftwidth=4 expandtab
