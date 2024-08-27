@@ -266,8 +266,26 @@ def main():
             cmake_args.append("-DENABLE_PRECOMPILED_HEADERS=OFF")
 
     # Custom flags
-    cmake_args.append("-DWITH_FFMPEG=OFF")
+#    cmake_args.append("-DWITH_IPP=OFF -DWITH_WEBP=OFF -DWITH_TIFF=OFF -DWITH_JASPER=OFF -DWITH_OPENJPEG=OFF -DWITH_OPENEXR=OFF -DWITH_IMGCODEC_HDR=OFF -DWITH_IMGCODEC_SUNRASTER=OFF -DWITH_IMGCODEC_PXM=OFF -DWITH_IMGCODEC_PFM=OFF -DWITH_JPEG=OFF -DWITH_OPENCL=OFF -DWITH_FFMPEG=OFF -DBUILD_opencv_calib3d=OFF -DBUILD_opencv_ml=OFF -DBUILD_opencv_objdetect=OFF -DBUILD_opencv_photo=OFF -DBUILD_opencv_stitching=OFF -DBUILD_opencv_video=OFF ")
+    cmake_args.append("-DWITH_IPP=OFF")
     cmake_args.append("-DWITH_WEBP=OFF")
+    cmake_args.append("-DWITH_TIFF=OFF")
+    cmake_args.append("-DWITH_JASPER=OFF")
+    cmake_args.append("-DWITH_OPENJPEG=OFF")
+    cmake_args.append("-DWITH_OPENEXR=OFF")
+    cmake_args.append("-DWITH_IMGCODEC_HDR=OFF")
+    cmake_args.append("-DWITH_IMGCODEC_SUNRASTER=OFF")
+    cmake_args.append("-DWITH_IMGCODEC_PXM=OFF")
+    cmake_args.append("-DWITH_IMGCODEC_PFM=OFF")
+    cmake_args.append("-DWITH_JPEG=OFF")
+    cmake_args.append("-DWITH_OPENCL=OFF")
+    cmake_args.append("-DWITH_FFMPEG=OFF")
+    cmake_args.append("-DBUILD_opencv_calib3d=OFF")
+    cmake_args.append("-DBUILD_opencv_ml=OFF")
+    cmake_args.append("-DBUILD_opencv_objdetect=OFF")
+    cmake_args.append("-DBUILD_opencv_photo=OFF")
+    cmake_args.append("-DBUILD_opencv_stitching=OFF")
+    cmake_args.append("-DBUILD_opencv_video=OFF")
 
     # works via side effect
     RearrangeCMakeOutput(
