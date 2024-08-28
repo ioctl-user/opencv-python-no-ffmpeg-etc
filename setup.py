@@ -262,7 +262,7 @@ def main():
 
         if sys.platform.startswith("linux"):
             cmake_args.append("-DWITH_V4L=ON")
-            cmake_args.append("-DWITH_LAPACK=ON")
+#            cmake_args.append("-DWITH_LAPACK=ON")
             cmake_args.append("-DENABLE_PRECOMPILED_HEADERS=OFF")
 
     # Custom flags
@@ -286,6 +286,7 @@ def main():
     cmake_args.append("-DBUILD_opencv_photo=OFF")
     cmake_args.append("-DBUILD_opencv_stitching=OFF")
     cmake_args.append("-DBUILD_opencv_video=OFF")
+    cmake_args.append("-DWITH_LAPACK=OFF")
 
     # works via side effect
     RearrangeCMakeOutput(
